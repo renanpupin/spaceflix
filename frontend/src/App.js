@@ -11,6 +11,8 @@ Modal.setAppElement('#root')
 
 const PORT = process.env.PORT || 5000;
 
+console.log("ENV VARIABLES", process.env);
+
 export default class App extends Component{
     constructor(props){
         super(props);
