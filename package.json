@@ -8,11 +8,15 @@
     "backend": "cd backend && node index.js",
     "backend-dev": "cd backend && nodemon index.js",
     "dev": "concurrently --kill-others-on-fail \"npm run backend-dev\" \"yarn frontend\"",
-    "heroku-postbuild": "cd backend && npm install && cd .. && cd frontend && yarn install && yarn build"
+    "heroku-postbuild": "cd backend && npm install"
   },
   "author": "Renan Pupin",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^5.2.0"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.9.0"
   }
 }
