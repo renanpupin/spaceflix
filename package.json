@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "frontend": "cd frontend && yarn start",
+    "start": "npm run backend",
     "backend": "cd backend && node index.js",
     "backend-dev": "cd backend && nodemon index.js",
+    "frontend": "cd frontend && yarn start",
     "dev": "concurrently --kill-others-on-fail \"npm run backend-dev\" \"yarn frontend\"",
-    "heroku-postbuild": "cd backend && npm install"
+    "heroku-postbuild": "cd backend && npm install && cd .. && cd frontend && yarn install && yarn build"
   },
   "author": "Renan Pupin",
   "license": "MIT",
@@ -17,6 +18,7 @@
   },
   "engines": {
     "node": "10.15.3",
-    "npm": "6.9.0"
+    "npm": "6.9.0",
+    "yarn": "1.22.4"
   }
 }
