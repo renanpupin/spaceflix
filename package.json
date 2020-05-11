@@ -8,7 +8,7 @@
     "backend": "cd backend && node index.js",
     "backend-dev": "cd backend && nodemon index.js",
     "dev": "concurrently --kill-others-on-fail \"npm run backend-dev\" \"yarn frontend\"",
-    "heroku-postbuild": "cd frontend && yarn install && yarn build"
+    "heroku-postbuild": "cd backend && npm install && cd .. && cd frontend && yarn install && yarn build"
   },
   "author": "Renan Pupin",
   "license": "MIT",
