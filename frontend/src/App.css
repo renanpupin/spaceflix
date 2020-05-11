@@ -1,0 +1,180 @@
+.color1{
+  color: #784284;
+}
+
+.color2{
+  color: #4D3A81;
+}
+
+.color3{
+  color: #2D3585;
+}
+
+.color4{
+  color: #0C1640;
+}
+
+.color5{
+  color: #1A2653;
+}
+
+.textColor{
+  color: #010A2D;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  margin: 20px;
+}
+
+.app{
+  /*height: 100vh;*/
+}
+
+.logo-wrapper{
+  text-align: center;
+}
+
+.logo {
+  width: auto;
+  height: 100px;
+  pointer-events: none;
+  padding: 20px;
+}
+
+.thumb{
+  height: 150px;
+  width: auto;
+  background-color: black;
+}
+
+.shadow{
+  box-shadow: 0 3px 6px rgba(255,255,255,0.16), 0 3px 6px rgba(255,255,255,0.23);
+}
+
+.video-list{
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-list-item{
+  flex-basis: 45%;
+  text-align: center;
+  width: 100%;
+  min-height: 250px;
+  max-width: 500px;
+  background-position: center center;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.title{
+  /*font-weight: bold;*/
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px 10px;
+  background-color: #010A2D;
+}
+
+.video-mask{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  opacity: 0;
+}
+
+.video-list-item:hover{
+  opacity: 1;
+}
+
+.play-button{
+  display: none;
+  visibility: hidden;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.video-list-item:hover .play-button{
+  display: block;
+  visibility: visible;
+  position: absolute;
+  left: calc(50% - 18px);
+  top: calc(50% - 18px);
+  /*pointer-events: none;*/
+}
+
+.play {
+  width: 35px;
+  height: auto;
+  pointer-events: none;
+  filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 1));
+}
+
+.font{
+  font-size: 12px;
+  color: black;
+}
+
+.video{
+  width: 100%;
+}
+
+.close-button{
+  position: absolute;
+  margin: 0;
+  padding: 10px;
+  border: none;
+  background: none;
+  outline: none;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close {
+  width: 18px;
+  height: auto;
+  /*pointer-events: none;*/
+  /*filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 1));*/
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}

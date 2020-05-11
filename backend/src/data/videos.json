@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Earth",
+        "file": "earth.mp4",
+        "thumb": "earth.png",
+        "font": "https://pixabay.com/videos/planet-cosmos-star-space-4077/"
+    },
+    {
+        "name": "Galaxy",
+        "file": "galaxy.mp4",
+        "thumb": "galaxy.png",
+        "font": "https://pixabay.com/videos/astronomy-space-moon-galaxy-planet-14139/"
+    },
+    {
+        "name": "Rocket",
+        "file": "rocket.mp4",
+        "thumb": "rocket.png",
+        "font": "https://pixabay.com/videos/rocket-thrusters-nasa-space-shuttle-235/"
+    },
+    {
+        "name": "Spacecraft",
+        "file": "spacecraft.mp4",
+        "thumb": "spacecraft.png",
+        "font": "https://pixabay.com/videos/spacecraft-space-ship-star-wars-24564/"
+    }
+]

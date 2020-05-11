@@ -1,0 +1,18 @@
+{
+  "name": "spaceflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd frontend && yarn start",
+    "backend": "cd backend && node index.js",
+    "backend-dev": "cd backend && nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run backend-dev\" \"yarn frontend\"",
+    "heroku-postbuild": "cd frontend && yarn install && yarn build"
+  },
+  "author": "Renan Pupin",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "spaceflix-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "thumbs": "node ./src/scripts/thumbs.js"
+  },
+  "author": "Renan Pupin",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
