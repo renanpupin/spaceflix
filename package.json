@@ -9,7 +9,7 @@
     "backend-dev": "cd backend && nodemon index.js",
     "frontend": "cd frontend && yarn start",
     "dev": "concurrently --kill-others-on-fail \"npm run backend-dev\" \"yarn frontend\"",
-    "heroku-postbuild": "cd backend && npm install && cd .. && echo $PORT && cd frontend && yarn install && PORT=$PORT yarn build"
+    "heroku-postbuild": "cd backend && npm install && cd .. && cd frontend && yarn install && yarn build"
   },
   "author": "Renan Pupin",
   "license": "MIT",
@@ -17,8 +17,8 @@
     "concurrently": "^5.2.0"
   },
   "engines": {
-    "node": "10.15.3",
-    "npm": "6.9.0",
+    "node": "12.16.2",
+    "npm": "6.14.4",
     "yarn": "1.22.4"
   }
 }

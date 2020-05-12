@@ -9,9 +9,7 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('#root')
 
-const PORT = process.env.PORT || 5000;
-
-console.log("ENV VARIABLES", process.env);
+// const PORT = process.env.PORT || 5000;
 
 export default class App extends Component{
     constructor(props){
@@ -33,7 +31,8 @@ export default class App extends Component{
         try{
             let response = await axios({
                 method: 'GET',
-                url: `http://localhost:${PORT}/api/video`
+                // url: `http://localhost:${PORT}/api/video`
+                url: `/api/video`
             });
             console.log(response.data);
 
