@@ -9,8 +9,6 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('#root')
 
-const PORT = process.env.PORT || 5000;
-
 export default class App extends Component{
     constructor(props){
         super(props);
@@ -31,7 +29,6 @@ export default class App extends Component{
         try{
             let response = await axios({
                 method: 'GET',
-                // url: `http://localhost:${PORT}/api/video`
                 url: `/api/video`
             });
             console.log(response.data);
@@ -73,8 +70,7 @@ export default class App extends Component{
                     <ul className={"video-list"}>
                         {this.state.videos.map((item, index) => {
                             return(
-                                <li key={index} className={"video-list-item"} style={{backgroundImage: `url(http://localhost:${PORT}/api/thumb/${item.thumb})`}}>
-                                    {/*<img src={`http://localhost:${PORT}/api/thumb/${item.thumb}`} className={"thumb shadow"}/>*/}
+                                <li key={index} className={"video-list-item"} style={{backgroundImage: `url(/api/thumb/${item.thumb})`}}>
                                     <p className={"title"}>{item.name}</p>
                                     <div className={"video-mask"}/>
 
@@ -129,7 +125,7 @@ export default class App extends Component{
                     </button>
                     <div style={{marginTop: 20}}>
                         <video id="videoPlayer" controls className="video">
-                            <source src={`http://localhost:${PORT}/api/video/${this.state.selectedVideo?.file}`} type="video/mp4"/>
+                            <source src={`/api/video/${this.state.selectedVideo?.file}`} type="video/mp4"/>
                         </video>
                         <p className={"font"}>Video from: <a href={this.state.selectedVideo?.font} target="_blank" rel="noopener noreferrer">{this.state.selectedVideo?.font}</a></p>
                     </div>
