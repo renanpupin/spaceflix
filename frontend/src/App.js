@@ -9,7 +9,7 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('#root')
 
-// const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 export default class App extends Component{
     constructor(props){
