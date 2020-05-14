@@ -4,6 +4,8 @@
 
 Streaming service for space videos.
 
+https://spaceflix-app.herokuapp.com/
+
 ## Frontend
 ````
 npm run frontend
